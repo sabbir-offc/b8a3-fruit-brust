@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="lofi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-fruit-brust</title>
+    <!-- Fav-icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/8dff704f57.js" crossorigin="anonymous"></script>
     <!-- google font lato -->
@@ -20,7 +22,11 @@
             theme: {
                 extend: {
                     backgroundImage: {
-                        'hero-bg': 'url("./images/banner4.png")',
+                        'hero-bg-1': 'url("./images/banner1.png")',
+                        'hero-bg-2': 'url("./images/banner2.png")',
+                        'hero-bg-3': 'url("./images/banner3.png")',
+                        'hero-bg-4': 'url("./images/banner4.png")',
+                        'hero-bg-5': 'url("./images/team.png")',
                     },
                     borderRadius: {
                         'full': '8px',
@@ -50,8 +56,8 @@
             <div class="carousel w-full h-[80vh]">
                 <!-- card 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero" style="background-image: url('images/banner1.png'); background-size: cover;">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero bg-hero-bg-1">
+                        <div class="hero-overlay bg-opacity-70"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div>
                                 <h1 class="mb-5 text-7xl font-bold text-white w-3/4 mx-auto">Exotic tastes at your
@@ -70,8 +76,8 @@
                 </div>
                 <!-- card 2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="hero" style="background-image: url('images/banner2.png'); background-size: cover;">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero bg-hero-bg-2">
+                        <div class="hero-overlay bg-opacity-70"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div>
                                 <h1 class="mb-5 text-7xl font-bold text-white w-3/4 mx-auto">Exotic tastes at your
@@ -90,8 +96,8 @@
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
 
-                    <div class="hero" style="background-image: url('images/banner3.png'); background-size: cover;">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero bg-hero-bg-3">
+                        <div class="hero-overlay bg-opacity-70"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div>
                                 <h1 class="mb-5 text-7xl font-bold text-white w-3/4 mx-auto">Exotic tastes at your
@@ -110,8 +116,8 @@
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
 
-                    <div class="hero" style="background-image: url('images/banner4.png'); background-size: cover;">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero bg-hero-bg-4">
+                        <div class="hero-overlay bg-opacity-70"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div>
                                 <h1 class="mb-5 text-7xl font-bold text-white w-3/4 mx-auto">Exotic tastes at your
@@ -167,7 +173,8 @@
             <div class="flex flex-col p-5 lg:flex-row lg:justify-around items-center mb-12">
                 <div>
                     <h2 class="text-3xl text-center lg:text-left lg:text-5xl font-bold mb-6">Deal of the day</h2>
-                    <p class="text-base text-center lg:text-left mb-4 lg:mb-0 text-[#121212] lg:w-1/2 font-normal ">Contrary to popular belief, is not simply
+                    <p class="text-base text-center lg:text-left mb-4 lg:mb-0 text-[#121212] lg:w-1/2 font-normal ">
+                        Contrary to popular belief, is not simply
                         random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
                         2000 years old.</p>
                 </div>
@@ -515,14 +522,100 @@
                 </div>
             </div>
 
-            <button class="px-8 py-5 text-xl font-bold bg-[#F85559] text-white rounded-xl mt-12 text-center">Shop All</button>
+            <button class="px-8 py-5 text-xl font-bold bg-[#F85559] text-white rounded-xl mt-12 text-center">Shop
+                All</button>
         </section>
 
 
 
         <!-- Team Section -->
-        <section class="container mx-auto"> 
+        <section class="container mx-auto my-28">
+            <div class="hero bg-hero-bg-5 min-h-[70vh]">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-black">Meet the team section</h1>
+                        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <div class="flex flex-col md:flex-row gap-36 justify-center items-center">
+                            <!-- Member 1 -->
+                            <div class="text-center">
+                                <img src="images/member1.png" alt="Team Image" class="mb-8">
+                                <h2 class="text-xl font-bold mb-2">
+                                    Awlad Hossain
+                                </h2>
+                                <p class="text-base font-normal mb-4">
+                                    Fruits Expert
+                                </p>
+                                <div class="flex gap-3">
+                                    <i class="fa-brands fa-facebook-f bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-linkedin-in bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                </div>
+                            </div>
+                            <!-- Member 2 -->
+                            <div class="text-center">
+                                <img src="images/member2.png" alt="Team Image" class="mb-8">
+                                <h2 class="text-xl font-bold mb-2">
+                                    Safia Chowdhury
+                                </h2>
+                                <p class="text-base font-normal mb-4">
+                                    Fruits Expert
+                                </p>
+                                <div class="flex gap-3">
+                                    <i class="fa-brands fa-facebook-f bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-linkedin-in bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                </div>
+                            </div>
+                            <!-- Member 3 -->
+                            <div class="text-center">
+                                <img src="images/member3.png" alt="Team Image" class="mb-8">
+                                <h2 class="text-xl font-bold mb-2">
+                                    Rokib Hossain
+                                </h2>
+                                <p class="text-base font-normal mb-4">
+                                    Fruits Expert
+                                </p>
+                                <div class="flex gap-4">
+                                    <i class="fa-brands fa-facebook-f bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-linkedin-in bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                </div>
+                            </div>
+                            <!-- Member 4 -->
+                            <div class="text-center">
+                                <img src="images/member4.png" alt="Team Image" class="mb-8">
+                                <h2 class="text-xl font-bold mb-2">
+                                    Chaity
+                                </h2>
+                                <p class="text-base font-normal mb-4">
+                                    Fruits Expert
+                                </p>
+                                <div class="flex gap-3">
+                                    <i class="fa-brands fa-facebook-f bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                    <i class="fa-brands fa-linkedin-in bg-[#F85559] p-4 rounded-full text-lg"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- attraction section -->
+        <section class="container mx-auto my-28">
+            <h2 class="font-extrabold text-5xl text-center mb-6">Why Choose Us</h2>
+            <p class="text-base font-normal text-[#121212] w-1/2 mx-auto text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <!-- option -->
+            <div>
+                <div>
+                    <div>
+                        <img src="images/group 1.png" alt="Group" class="bg-[#1212121A] p-5" style="border-radius: 50%;"> 
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
