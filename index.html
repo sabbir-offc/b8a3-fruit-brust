@@ -292,7 +292,7 @@
             </div>
             <div class="grid gap-28 grid-cols-1  md:grid-cols-2 lg:grid-cols-4 place-items-center w-[80%] mx-auto">
                 <!-- card 1 -->
-                <div class="card w-80 bg-base-100 pb-8 border-2">
+                <div class="card w-80 bg-base-100  border-2 shadow-lg">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit6.png" alt="Fruit" class="mb-12" />
                     </figure>
@@ -315,7 +315,7 @@
                             <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <div>
-                            <button class="text-xl font-bold text-[#F85559]" onclick="my_modal_5.showModal()">Details
+                            <button class="text-xl font-bold  text-[#F85559] bg-red-100 w-full h-14" onclick="my_modal_5.showModal()">Details
                             </button>
                             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <form method="dialog" class="modal-box">
@@ -370,7 +370,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="card w-80 bg-base-100 pb-8 border-2">
+                <div class="card w-80 bg-base-100  border-2 shadow-lg">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit7.png" alt="Fruit" class="mb-12" />
                     </figure>
@@ -379,7 +379,7 @@
                         <hr class="w-[80%] mx-auto">
                         <p>Orange</p>
                         <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-2" class="rating-hidden" id="rating2" />
+                            <input type="radio" name="rating-2" class="rating-hidden" id="rating-10" />
                             <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                             <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1"
@@ -393,7 +393,7 @@
                             <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <div>
-                            <button class="text-xl font-bold text-[#F85559]" onclick="my_modal_6.showModal()">Details
+                            <button class="text-xl font-bold  text-[#F85559] bg-orange-100 w-full h-14" onclick="my_modal_6.showModal()">Details
                             </button>
                             <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
                                 <form method="dialog" class="modal-box">
@@ -416,7 +416,7 @@
                                                     class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
                                                 <input type="radio" name="rating-10"
                                                     class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                                                <input type="radio" name="rating-10"
+                                                <input type2radio" name="rating-10"
                                                     class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                                                 <input type="radio" name="rating-10"
                                                     class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -448,7 +448,7 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="card w-80 bg-base-100 pb-8 border-2">
+                <div class="card w-80 bg-base-100 border-2 shadow-lg">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit8.png" alt="Fruit" class="mb-12" />
                     </figure>
@@ -471,7 +471,7 @@
                             <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <div>
-                            <button class="text-xl font-bold text-[#F85559]" onclick="my_modal_7.showModal()">Details
+                            <button class="text-xl font-bold text-[#F85559] bg-pink-100 w-full h-14" onclick="my_modal_7.showModal()">Details
                             </button>
                             <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
                                 <form method="dialog" class="modal-box">
@@ -526,7 +526,7 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="card w-80 bg-base-100 pb-8 border-2">
+                <div class="card w-80 bg-base-100 border-2 shadow-lg">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit9.png" alt="Fruit" class="mb-12" />
                     </figure>
@@ -549,7 +549,7 @@
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <div>
-                            <button class="text-xl font-bold text-[#F85559]" onclick="my_modal_8.showModal()">Details
+                            <button class="text-xl font-bold text-[#F85559] bg-yellow-100 w-full h-14" onclick="my_modal_8.showModal()">Details
                             </button>
                             <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
                                 <form method="dialog" class="modal-box">
@@ -736,10 +736,8 @@
                         <img src="images/whychoose1.png" alt="image load to failed" class="w-full mx-auto">
                     </div>
                 </div>
-                <!-- middle image -->
-
                 <!-- right side text -->
-                <div class="flex flex-col space-y-12 mt-12">
+                <div class="flex flex-auto flex-col space-y-12 mt-12">
                     <div
                         class="flex lg:items-start lg:flex-row-reverse text-center lg:text-left gap-6 flex-col lg:flex-row">
                         <img src="images/fruit 1.png" alt="Group"
@@ -813,6 +811,8 @@
             <i class="fa-brands fa-instagram text-[#fa7e1e]"></i>
             <i class="fa-brands fa-apple"></i>
         </div>
+
+        <small class="text-gray-300 my-6">&copy;2023 Fruit Burst | All Right Reserved </small>
     </footer>
 </body>
 
